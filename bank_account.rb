@@ -16,7 +16,11 @@ class BankAccount
   end
 
   def self.minimum_balance=(min_balance)
-    @@min_balance == min_balance
+    @@min_balance= min_balance
+  end
+  
+  def self.minimum_balance
+   @@min_balance
   end
 
   def deposit(deposit_amount)
