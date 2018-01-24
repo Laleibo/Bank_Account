@@ -9,7 +9,7 @@ class BankAccount
     if balance >= @@min_balance
       @balance = balance
     else
-      raise ArgumentError
+      raise ArgumentError.new("Your Balance is the below 
     end
     @name= name
     @transactions = []
